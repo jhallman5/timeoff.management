@@ -1,0 +1,8 @@
+Leave request was decided
+=====
+Hello {{#with requester}}{{this.full_name}}{{/with}},
+
+{{#with approver }}{{this.full_name}}{{/with}} decided to {{action}} your {{#if was_pended_revoke}}cancellation of {{/if}}leave request {{>leave_request_detail leave=leave }}.
+
+This message was sent by
+{{get_promotion_website_domain}}

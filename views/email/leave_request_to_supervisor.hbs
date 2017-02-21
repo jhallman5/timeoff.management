@@ -1,0 +1,10 @@
+New leave request
+=====
+Hello {{#with approver }}{{this.full_name}}{{/with}},
+
+{{#with requester}}{{this.full_name}}{{/with}} sent new leave request {{>leave_request_detail leave=leave }}.
+
+Please visit {{get_application_domain}}/requests/ to approve or reject outstanding requests.
+
+This message was sent by
+{{get_promotion_website_domain}}
