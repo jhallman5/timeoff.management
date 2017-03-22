@@ -18,8 +18,8 @@
 
 This epics adds a new role: approver. Approvers can approve and reject requests, but don't have all of the admin access that an admin has.
 
-- As an Admin when I add a new user, I can choose to make them an approver
-- As an Admin if I try to make someone an approver AND an admin I get an error: "User can only be approver or admin, not both"
+-X As an Admin when I add a new user, I can choose to make them an approver
+-X As an Admin if I try to make someone an approver AND an admin I get an error: "User can only be approver or admin, not both"
 - As an approver I can see a menu item in the top navbar next to calendar called "Requests" which links to "/requests"
 - As an admin I can see the requests link as well
 - As an employee I cannot see the requests link

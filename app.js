@@ -64,6 +64,7 @@ app.use(function(req,res,next){
     // For book leave request modal
     res.locals.booking_start = moment();
     res.locals.booking_end = moment();
+    console.log('res locals',res.locals)
     next();
 });
 
