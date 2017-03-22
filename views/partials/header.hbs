@@ -19,7 +19,11 @@
         {{# if logged_user }}
           <li><a href="/calendar/">Calendar</a></li>
           <li class="hidden-xs"><a href="/calendar/teamview/">Team View</a></li>
+          {{# if logged_user.approver }}
+            <li class="hidden-xs"><a href="/requests/">Requests</a></li>
+          {{/if}}
           {{# if logged_user.admin }}
+            <li class="hidden-xs"><a href="/requests/">Requests</a></li>
             <li class="hidden-xs"><a href="/users/">Employees</a></li>
           {{/if}}
           <li class="navbar-form navbar-left">
@@ -63,5 +67,3 @@
 </nav>
 
 </div>
-
-
