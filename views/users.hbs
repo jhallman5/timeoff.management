@@ -39,6 +39,7 @@
             <th>Name</th>
             <th>Department</th>
             <th>Is Administrator?</th>
+            <th>Is Approver</th>
             <th>Days used</th>
           </tr>
         </thead>
@@ -48,6 +49,7 @@
             <td class="user-link-cell"><a href="/users/edit/{{this.id}}/">{{this.full_name}}</a></td>
             <td class="user_department">{{this.department.name}}</td>
             <td>{{# if this.admin }}Yes{{else}}{{/if}}</td>
+            <td>{{# if this.approver}}Yes{{else}}{{/if}}</td>
             <td>{{this.calculate_number_of_days_taken_from_allowence}}</td>
           </tr>
           {{/each}}
