@@ -61,6 +61,7 @@ app.use(function(req,res,next){
     res.locals.logged_user = req.user;
     res.locals.url_to_the_site_root = '/';
     res.locals.requested_path = req.originalUrl;
+    console.log('-=-=-=> req.locals' , res.locals)
     // For book leave request modal
     res.locals.booking_start = moment();
     res.locals.booking_end = moment();
