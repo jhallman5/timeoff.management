@@ -4,7 +4,7 @@
       sassc scss/main.scss public/css/style.css
 */
 
-$primary-font-color : #61686b;
+$primary-font-color : #61686C;
 $border-color : #e5e5e5;
 $link-color : #5ba4e5;
 
@@ -194,4 +194,10 @@ div.feeds-holder {
 /* Fix for issue with modal scrollings on mobiles */
 @media (max-width: 768px) {
   body.modal-open { position: fixed; }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background: #FF0000;
 }

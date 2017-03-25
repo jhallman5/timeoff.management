@@ -21,9 +21,25 @@
           <li class="hidden-xs"><a href="/calendar/teamview/">Team View</a></li>
           {{# if logged_user.approver }}
             <li class="hidden-xs"><a href="/requests/">Requests</a></li>
+            <li class='icon'
+                style="display:flex;
+                      justify-content: center;
+                      color:white;
+                      margin-top:5px;
+                      background:#F92020;
+                      border-radius:50%;
+                      width:15px;">{{this.to_be_approved_leaves.length }}</li>
           {{/if}}
           {{# if logged_user.admin }}
             <li class="hidden-xs"><a href="/requests/">Requests</a></li>
+            <li class='icon'
+                style="display:flex;
+                      justify-content: center;
+                      color:white;
+                      margin-top:5px;
+                      background:#F92020;
+                      border-radius:50%;
+                      width:15px;">{{this.to_be_approved_leaves.length }}</li>
             <li class="hidden-xs"><a href="/users/">Employees</a></li>
           {{/if}}
           <li class="navbar-form navbar-left">
